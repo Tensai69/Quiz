@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-class MainQuiz extends Component {
+export default class MainQuiz extends Component {
   render() {
     const {
       numberOfAnswer,
@@ -43,5 +43,3 @@ class MainQuiz extends Component {
     );
   }
 }
-
-export default MainQuiz;
