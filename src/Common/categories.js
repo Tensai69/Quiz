@@ -12,49 +12,29 @@ export const CATEGORIES = [
     value: "25",
   },
   {
-    name: "Celebrities",
-    value: "26",
-  },
-
-  {
-    name: "Entertainment: Books",
-    value: "10",
-  },
-  {
-    name: "Entertainment: Film",
-    value: "11",
-  },
-  {
-    name: "Entertainment: Music",
-    value: "12",
-  },
-  {
-    name: "Entertainment: Musicals & Theatres",
-    value: "13",
-  },
-  {
-    name: "Entertainment: Television",
-    value: "14",
-  },
-  {
-    name: "Entertainment: Video Games",
-    value: "15",
-  },
-  {
-    name: "Entertainment: Board Games",
+    name: "Board Games",
     value: "16",
   },
   {
-    name: "Entertainment: Comics",
+    name: "Books",
+    value: "10",
+  },
+
+  {
+    name: "Cartoon & Animations",
+    value: "32",
+  },
+  {
+    name: "Celebrities",
+    value: "26",
+  },
+  {
+    name: "Comics",
     value: "29",
   },
   {
-    name: "Entertainment: Japanese Anime &amp; Manga",
-    value: "31",
-  },
-  {
-    name: "Entertainment: Cartoon & Animations",
-    value: 32,
+    name: "Film",
+    value: "11",
   },
   {
     name: "General Knowledge",
@@ -68,6 +48,19 @@ export const CATEGORIES = [
     name: "History",
     value: "23",
   },
+  {
+    name: "Japanese Anime & Manga",
+    value: "31",
+  },
+  {
+    name: "Music",
+    value: "12",
+  },
+  {
+    name: "Musicals & Theatres",
+    value: "13",
+  },
+
   {
     name: "Mythology",
     value: "20",
@@ -97,9 +90,17 @@ export const CATEGORIES = [
     name: "Sports",
     value: "21",
   },
+  {
+    name: "Television",
+    value: "14",
+  },
 
   {
     name: "Vehicles",
     value: "28",
+  },
+  {
+    name: "Video Games",
+    value: "15",
   },
 ];

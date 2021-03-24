@@ -8,7 +8,7 @@ export default class MainQuiz extends Component {
       correctAnswers,
       timerTime,
       healthBar,
-      onAnswerClick
+      onAnswerClick,
     } = this.props;
     return (
       <div className="quiz">
@@ -20,7 +20,10 @@ export default class MainQuiz extends Component {
         <div>{`Progress: ${numberOfAnswer + 1} / ${data.length}`}</div>
         <div> {`Time left: ${timerTime}`}</div>
         <h3>QUESTION</h3>
-        <div> {decodeURIComponent(data[numberOfAnswer].question)}</div>
+        <div className="questionDiv">
+          {" "}
+          {decodeURIComponent(data[numberOfAnswer].question)}
+        </div>
         <h3>ANSWERS</h3>
         <div className="answersList">
           {data[numberOfAnswer].allAnswers.map((answer, index) => (
@@ -34,11 +37,11 @@ export default class MainQuiz extends Component {
             </button>
           ))}
         </div>
-        <br />
 
-        <hr />
-
-        <div>{`Correct Answers : ${correctAnswers}`}</div>
+        <div className="correctAnswers">
+          <hr />
+          {`Correct Answers : ${correctAnswers}`}
+        </div>
       </div>
     );
   }

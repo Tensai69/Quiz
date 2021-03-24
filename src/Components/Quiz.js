@@ -19,7 +19,7 @@ class Quiz extends React.Component {
       quizFinished: false,
       healthBar: 3,
       quizStarted: false,
-      timerTime: "",
+      timerTime: "124124124214",
     };
   }
   getData = async () => {
@@ -161,7 +161,7 @@ class Quiz extends React.Component {
     }
     return (
       <MainQuiz
-        healthbar={healthBar}
+        healthBar={healthBar}
         numberOfAnswer={numberOfAnswer}
         data={data}
         timerTime={timerTime}
