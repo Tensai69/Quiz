@@ -4,7 +4,7 @@ const Finish = (props) => {
   const {correctAnswers, replay, mainMenu} = props
   let title = "";
   if (correctAnswers === 0) {
-  title = "retard";
+  title = "0 iq";
   }
   if (correctAnswers >= 1) {
   title = "200 IQ detected";
@@ -13,9 +13,9 @@ const Finish = (props) => {
     <div className="quiz">
       <h1>{title}</h1>
       <h3>{`Correct Answers : ${correctAnswers}`}</h3>
-      <button onClick={replay}>TRY AGAIN</button>
+      <button onClick={replay} className="answerSpan">TRY AGAIN</button>
       <br />
-      <button onClick={mainMenu}>MAIN PAGE</button>
+      <button onClick={mainMenu}className="answerSpan">MAIN PAGE</button>
     </div>
   );
 };
