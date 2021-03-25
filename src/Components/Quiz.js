@@ -19,7 +19,7 @@ class Quiz extends React.Component {
       quizFinished: false,
       healthBar: 3,
       quizStarted: false,
-      timerTime: "124124124214",
+      timerTime: "",
     };
   }
   getData = async () => {
@@ -53,12 +53,10 @@ class Quiz extends React.Component {
     let { healthBar } = this.state;
     const { data, numberOfAnswer } = this.state;
     const { value } = e.target;
-
     clearInterval(this.timerId);
     this.setState({
       timerTime: 15,
     });
-
     if (value === data[numberOfAnswer].correct_answer) {
       this.setState((prevState) => {
         return { correctAnswers: prevState.correctAnswers + 1 };
@@ -117,7 +115,12 @@ class Quiz extends React.Component {
           },
           () => {
             if (this.state.timerTime === 0) {
-              this.setState({ quizFinished: true });
+/*              this.setState((prevState) => {
+                return {healthBar: prevState.healthBar - 1};
+              });*/
+              if (this.state.timerTime === 0 || this.state.healthbar === 0) {
+                this.setState({ quizFinished: true });
+              }
             }
           }
         ),

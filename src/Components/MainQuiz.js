@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class MainQuiz extends Component {
-  render() {
+ const MainQuiz = (props) => {
     const {
       numberOfAnswer,
       data,
@@ -9,14 +8,11 @@ export default class MainQuiz extends Component {
       timerTime,
       healthBar,
       onAnswerClick,
-    } = this.props;
+    } = props;
     return (
       <div className="quiz">
         <h1>LET'S GO QUIZ</h1>
         <span className="healthBar"> &#9829; &#9829; &#9829; {healthBar}</span>
-        <br />
-        <br />
-
         <div>{`Progress: ${numberOfAnswer + 1} / ${data.length}`}</div>
         <div> {`Time left: ${timerTime}`}</div>
         <h3>QUESTION</h3>
@@ -44,5 +40,7 @@ export default class MainQuiz extends Component {
         </div>
       </div>
     );
-  }
-}
+
+
+ }
+export default MainQuiz

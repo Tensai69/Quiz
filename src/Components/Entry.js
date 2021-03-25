@@ -1,9 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { CATEGORIES } from "../Common/categories";
 
-export default class Entry extends Component {
-  render() {
-    const { changeCat, amount, amountChange, replay } = this.props;
+const Entry = (props) => {
+    const { changeCat, amount, amountChange, replay } = props;
     return (
       <div className="quiz">
         <h1> Let's play</h1>
@@ -18,7 +17,6 @@ export default class Entry extends Component {
               );
             })}
           </select>
-          <div></div>
           <label>
             <div>Amount 1-50:</div>
             <input
@@ -37,5 +35,6 @@ export default class Entry extends Component {
         </button>
       </div>
     );
-  }
+
 }
+export default Entry
